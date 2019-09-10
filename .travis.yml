@@ -3,6 +3,7 @@ node_js:
   - lts/*
 script: npm run build
 
+
 deploy:
   provider: pages
   skip_cleanup: true
