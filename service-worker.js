@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/amae-koromo/precache-manifest.22e0f923919368bb0006ce17d6ca64b2.js"
+  "/amae-koromo/precache-manifest.d7b04ccd29e098672d7802c7fb763022.js"
 );
 
 workbox.clientsClaim();
