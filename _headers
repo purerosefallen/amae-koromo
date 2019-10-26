@@ -3,7 +3,7 @@
   Cache-Control: max-age=86400
 
 /*
-  Link: /static/css/8.d7aaa724.chunk.css; rel=preload; as=stylesheet
-  Link: /static/css/main.a5d1f1fe.chunk.css; rel=preload; as=stylesheet
-  Link: /static/js/8.68c004fa.chunk.js; rel=preload; as=script
-  Link: /static/js/main.92cfd9e6.chunk.js; rel=preload; as=script
+  Link: </static/css/8.d7aaa724.chunk.css>; rel=preload; as=stylesheet
+  Link: </static/css/main.a5d1f1fe.chunk.css>; rel=preload; as=stylesheet
+  Link: </static/js/8.68c004fa.chunk.js>; rel=preload; as=script
+  Link: </static/js/main.92cfd9e6.chunk.js>; rel=preload; as=script
