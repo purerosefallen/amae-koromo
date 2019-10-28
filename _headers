@@ -1,9 +1,25 @@
 
 /static/*
   Cache-Control: public, immutable, max-age=604800, s-maxage=604800
-  Link:
 
-/*
+/
+  Cache-Control: public, max-age=0, stale-while-revalidate=600
+  Link: </static/css/8.90243a1e.chunk.css>; rel=preload; as=style
+  Link: </static/css/main.9c442d91.chunk.css>; rel=preload; as=style
+  Link: </static/js/8.2ca6f682.chunk.js>; rel=preload; as=script
+  Link: </static/js/main.48317156.chunk.js>; rel=preload; as=script
+  Link: </static/media/koromo.preload.eed92857.jpg>; rel=preload; as=image
+
+/:a
+  Cache-Control: public, max-age=0, stale-while-revalidate=600
+  Link: </static/css/8.90243a1e.chunk.css>; rel=preload; as=style
+  Link: </static/css/main.9c442d91.chunk.css>; rel=preload; as=style
+  Link: </static/js/8.2ca6f682.chunk.js>; rel=preload; as=script
+  Link: </static/js/main.48317156.chunk.js>; rel=preload; as=script
+  Link: </static/media/koromo.preload.eed92857.jpg>; rel=preload; as=image
+
+/:a/:b
+  Cache-Control: public, max-age=0, stale-while-revalidate=600
   Link: </static/css/8.90243a1e.chunk.css>; rel=preload; as=style
   Link: </static/css/main.9c442d91.chunk.css>; rel=preload; as=style
   Link: </static/js/8.2ca6f682.chunk.js>; rel=preload; as=script
