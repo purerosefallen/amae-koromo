@@ -12,12 +12,12 @@ self.__precacheManifest = [
     "url": "/static/js/2.07e50758.chunk.js"
   },
   {
-    "revision": "6f62b0e060748b6b0f71",
+    "revision": "522f41456c1947942dcd",
     "url": "/static/css/main.5a8ddfc1.chunk.css"
   },
   {
-    "revision": "6f62b0e060748b6b0f71",
-    "url": "/static/js/main.6f62b0e0.chunk.js"
+    "revision": "522f41456c1947942dcd",
+    "url": "/static/js/main.522f4145.chunk.js"
   },
   {
     "revision": "a3844dbc9a7e71ea367b",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/static/media/koromo.preload.eed92857.jpg"
   },
   {
-    "revision": "2e2a212c21dbbed85aaa06f3300f61e6",
+    "revision": "2a3d0445e9f285993793e92b4262c7dc",
     "url": "/index.html"
   }
 ];
