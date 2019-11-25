@@ -5,10 +5,10 @@
     "static/js/1.311ed282.chunk.js": "/static/js/1.311ed282.chunk.js",
     "static/js/1.311ed282.chunk.js.map": "/static/js/1.311ed282.chunk.js.map",
     "main.css": "/static/css/main.356bf9b7.chunk.css",
-    "main.js": "/static/js/main.32d0e772.chunk.js",
-    "main.js.map": "/static/js/main.32d0e772.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.418b6e2e.js",
-    "runtime-main.js.map": "/static/js/runtime-main.418b6e2e.js.map",
+    "main.js": "/static/js/main.585ecb3a.chunk.js",
+    "main.js.map": "/static/js/main.585ecb3a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1e0c9c0d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1e0c9c0d.js.map",
     "static/js/4.3a039fda.chunk.js": "/static/js/4.3a039fda.chunk.js",
     "static/js/4.3a039fda.chunk.js.map": "/static/js/4.3a039fda.chunk.js.map",
     "static/js/5.388cfe7d.chunk.js": "/static/js/5.388cfe7d.chunk.js",
@@ -17,8 +17,8 @@
     "static/js/6.c89c1caf.chunk.js.map": "/static/js/6.c89c1caf.chunk.js.map",
     "static/js/7.d2c74b84.chunk.js": "/static/js/7.d2c74b84.chunk.js",
     "static/js/7.d2c74b84.chunk.js.map": "/static/js/7.d2c74b84.chunk.js.map",
-    "static/js/8.177eece4.chunk.js": "/static/js/8.177eece4.chunk.js",
-    "static/js/8.177eece4.chunk.js.map": "/static/js/8.177eece4.chunk.js.map",
+    "static/js/8.669457e5.chunk.js": "/static/js/8.669457e5.chunk.js",
+    "static/js/8.669457e5.chunk.js.map": "/static/js/8.669457e5.chunk.js.map",
     "static/js/9.b11989a0.chunk.js": "/static/js/9.b11989a0.chunk.js",
     "static/js/9.b11989a0.chunk.js.map": "/static/js/9.b11989a0.chunk.js.map",
     "static/js/10.192b4f3e.chunk.js": "/static/js/10.192b4f3e.chunk.js",
@@ -28,15 +28,15 @@
     "static/js/12.3e0e1142.chunk.js": "/static/js/12.3e0e1142.chunk.js",
     "static/js/12.3e0e1142.chunk.js.map": "/static/js/12.3e0e1142.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5743e84108d69db43a19253e5275a373.js": "/precache-manifest.5743e84108d69db43a19253e5275a373.js",
+    "precache-manifest.1af8d643b09b41189f84478be88a9fc8.js": "/precache-manifest.1af8d643b09b41189f84478be88a9fc8.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.356bf9b7.chunk.css.map": "/static/css/main.356bf9b7.chunk.css.map",
     "static/media/styles.scss": "/static/media/koromo.preload.eed92857.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.418b6e2e.js",
+    "static/js/runtime-main.1e0c9c0d.js",
     "static/js/4.3a039fda.chunk.js",
     "static/css/main.356bf9b7.chunk.css",
-    "static/js/main.32d0e772.chunk.js"
+    "static/js/main.585ecb3a.chunk.js"
   ]
 }
