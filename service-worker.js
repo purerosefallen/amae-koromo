@@ -15,7 +15,7 @@ importScripts("/workbox-v4.3.1/workbox-sw.js");
 workbox.setConfig({modulePathPrefix: "/workbox-v4.3.1"});
 
 importScripts(
-  "/precache-manifest.1e614ccff94ad54fe78939d420fff1aa.js"
+  "/precache-manifest.d14d35d7a190b9ebeedf533de40fe7fc.js"
 );
 
 self.addEventListener('message', (event) => {
