@@ -15,7 +15,7 @@ importScripts("/workbox-v4.3.1/workbox-sw.js");
 workbox.setConfig({modulePathPrefix: "/workbox-v4.3.1"});
 
 importScripts(
-  "/precache-manifest.e2330a1dad2f11d2ff92df2e1124cfda.js"
+  "/precache-manifest.7f2ec90417b8ec316a06593e2b37fffe.js"
 );
 
 workbox.core.skipWaiting();
