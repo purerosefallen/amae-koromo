@@ -1,7 +1,11 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 import Conf from "../../utils/conf";
 
-const DATA_MIRRORS = ["https://paipu-data.momobako.com/"];
+const DATA_MIRRORS = [
+  "https://paipu-data-3.momobako.com:444/",
+  "https://paipu-data-1.momobako.com:444/",
+  "https://paipu-data-2.momobako.com:444/"
+];
 const PROBE_TIMEOUT = 15000;
 
 let selectedMirror = localStorage.getItem("selectedMirror") || DATA_MIRRORS[0];
