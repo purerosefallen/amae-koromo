@@ -1,6 +1,6 @@
 FROM node:buster-slim
 RUN apt update && apt -y install cron && rm -rf /var/lib/apt/lists/*
-
+RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 COPY ./package*.json .
 RUN npm install
