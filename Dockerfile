@@ -10,4 +10,4 @@ RUN echo '0 * * * * bash -c "cd /usr/src/app && npm run build"' > /etc/cron.d/pa
 
 ENV PAIPU_TYPE paipu
 
-CMD sed -i "s/PAIPU_TYPE/${PAIPU_TYPE}/g" ./package.json && npm run build && cron -f 
+CMD sed -i "s/PAIPU_TYPE/${PAIPU_TYPE}/g" ./package.json && npm run build && sleep infinity
