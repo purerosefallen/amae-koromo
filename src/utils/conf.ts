@@ -104,10 +104,10 @@ function mergeDeep<T extends { [key: string]: any }>(...objects: Partial<T>[]): 
 }
 
 const ConfBase: Partial<Configuration> = (() => {
-  if (/^(ako|kuro)\./i.test(domain)) {
+  if (/^paipu-gold\./i.test(domain)) {
     return CONFIGURATIONS.ako;
   }
-  if (/^(ikeda|momoko)\./i.test(domain)) {
+  if (/^paipu-3\./i.test(domain)) {
     return CONFIGURATIONS.ikeda;
   }
   const m = /^([^.]+)\.contest\./i.exec(domain);
