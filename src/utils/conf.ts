@@ -18,9 +18,9 @@ export const CONFIGURATIONS = {
     availableModes: [GameMode.王座, GameMode.玉],
     dateMin: dayjs("2019-08-23", "YYYY-MM-DD"),
     siteTitle: "雀魂牌谱屋",
-    canonicalDomain: "amae-koromo.sapk.ch",
+    canonicalDomain: "paipu.momobako.com",
     showTopNotice: true,
-    mirrorUrl: "https://saki.sapk.ch/",
+    mirrorUrl: "https://paipu.momobako.com/",
     siteSpecificNotice: "记录包含雀魂国服四人半庄段位战玉之间及王座之间的牌谱。",
     rootClassName: "koromo",
     rankColors: ["#28a745", "#17a2b8", "#6c757d", "#dc3545"]
@@ -38,8 +38,8 @@ export const CONFIGURATIONS = {
     availableModes: [GameMode.金],
     dateMin: dayjs("2019-11-29", "YYYY-MM-DD"),
     siteTitle: "雀魂牌谱屋·金",
-    canonicalDomain: "ako.sapk.ch",
-    mirrorUrl: "https://kuro.sapk.ch/",
+    canonicalDomain: "paipu-gold.momobako.com",
+    mirrorUrl: "https://paipu-gold.momobako.com/",
     siteSpecificNotice: "记录包含雀魂国服四人半庄段位战金之间的牌谱。",
     rootClassName: "achiga"
   },
@@ -53,8 +53,8 @@ export const CONFIGURATIONS = {
     availableModes: [GameMode.三王座, GameMode.三玉, GameMode.三金],
     dateMin: dayjs("2019-11-29", "YYYY-MM-DD"),
     siteTitle: "雀魂牌谱屋·三麻",
-    canonicalDomain: "ikeda.sapk.ch",
-    mirrorUrl: "https://momoko.sapk.ch/",
+    canonicalDomain: "paipu-3.momobako.com",
+    mirrorUrl: "https://paipu-3.momobako.com/",
     siteSpecificNotice: "记录包含雀魂国服三人半庄段位战金之间、玉之间及王座之间的牌谱。",
     rankColors: ["#28a745", "#6c757d", "#dc3545"],
     rootClassName: "yuuki"
