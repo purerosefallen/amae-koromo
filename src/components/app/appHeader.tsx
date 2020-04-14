@@ -15,11 +15,8 @@ function AlertDefault() {
         <li>页面不是实时更新，对局一般会在结束后数分钟至数小时内出现。</li>
         <li>对局数据收集从{Conf.dateMin.format(" YYYY 年 M 月 D 日")}开始，之前的对局已无法获取。</li>
         <li>
-          如有问题或建议，请戳 <a href="mailto:i@sapika.ch">SAPikachu (i@sapika.ch)</a> 或{" "}
-          <a href="https://github.com/SAPikachu/amae-koromo/">提交 Issue</a>。
-        </li>
-        <li>
-          感谢 <a href="https://github.com/kamicloud/">Kamicloud</a> 提供部分数据。
+          如有问题或建议，请戳 <a href="nanahira@momobako.com">Nanahira (nanahira@momobako.com)</a> 或{" "}
+          <a href="https://github.com/purerosefallen/amae-koromo/">提交 Issue</a>。
         </li>
       </ul>
     </>
@@ -38,11 +35,8 @@ function AlertJa() {
           データの収集は{Conf.dateMin.format(" YYYY 年 M 月 D 日")}からです。収集が始まるまでの対戦は検索できません。
         </li>
         <li>
-          内容の誤り・誤植等はご報告いただけますと幸いです。 <a href="mailto:i@sapika.ch">SAPikachu (i@sapika.ch)</a>{" "}
-          または <a href="https://github.com/SAPikachu/amae-koromo/">GitHub</a> でご連絡ください。
-        </li>
-        <li>
-          感谢 <a href="https://github.com/kamicloud/">Kamicloud</a> 提供部分数据。
+          内容の誤り・誤植等はご報告いただけますと幸いです。 <a href="nanahira@momobako.com">Nanahira (nanahira@momobako.com)</a>{" "}
+          または <a href="https://github.com/purerosefallen/amae-koromo/">GitHub</a> でご連絡ください。
         </li>
       </ul>
     </>
