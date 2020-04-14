@@ -47,6 +47,7 @@ export const GameRecord = Object.freeze({
       ? `_a${GameRecord.encodeAccountId(typeof playerId === "number" ? playerId : parseInt(playerId))}`
       : "";
     const uuid = typeof rec === "string" ? rec : rec.uuid;
-    return `${i18n.t("https://www.majsoul.com/1/")}?paipu=${uuid}${trailer}`;
+    //return `${i18n.t("https://www.majsoul.com/1/")}?paipu=${uuid}${trailer}`;
+    return `${i18n.t("https://mahjongsoul.game.yo-star.com/")}?paipu=${uuid}${trailer}`;
   }
 });
