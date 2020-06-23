@@ -22,6 +22,11 @@ body {
 .yuuki body {
   background-image: url(../assets/img/yuuki.jpg);
 }
+.dark-mode body {
+  filter: invert(100%) hue-rotate(180deg);
+  background-color: rgb(34, 34, 34);
+  background-image: none;
+}
 h1 a,
 h1 a:hover {
   color: inherit;
@@ -69,6 +74,9 @@ dl:empty {
 }
 .navbar:hover {
   background: rgba(255, 255, 255, 1);
+}
+button.nav-link {
+  text-align: left;
 }
 button.nav-link,
 button.button-link {
@@ -121,6 +129,9 @@ button.button-link {
   font-weight: bold;
   transform: translateY(5px);
 }
+.dark-mode .recharts-label-list text {
+  opacity: 0.5;
+}
 .with-active-player .player:not(.active-player) {
   color: #aaa;
 }
@@ -155,4 +166,7 @@ button.button-link {
 }
 .__react_component_tooltip {
   max-width: 75vw;
+}
+.stat-tooltip {
+  text-align: center;
 }

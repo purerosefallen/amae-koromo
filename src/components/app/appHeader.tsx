@@ -28,7 +28,9 @@ function AlertJa() {
     <>
       <h4>説明</h4>
       <ul>
-        <li>当サイトは非公式サイトで、データの完全性と正確性が保証できません、予めご了承ください。サイトの内容を悪用しないでください。</li>
+        <li>
+          当サイトは非公式サイトで、データの完全性と正確性が保証できません、予めご了承ください。サイトの内容を悪用しないでください。
+        </li>
         <li>現時点では半荘戦だけ記録しています。東風戦のデータは含まれません。</li>
         <li>データの更新はリアルタイムではありません。対局がサイトに載せるまで数分から数時間がかかります。</li>
         <li>
@@ -46,7 +48,7 @@ function AlertJa() {
 export function AppHeader() {
   const { i18n } = useTranslation();
   return (
-    <Alert container={Container} stateName="topNote20200313">
+    <Alert container={Container} stateName="topNote20200501">
       {i18n.language.indexOf("ja") === 0 ? <AlertJa /> : <AlertDefault />}
     </Alert>
   );

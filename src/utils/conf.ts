@@ -10,10 +10,15 @@ export const CONFIGURATIONS = {
     features: {
       ranking: true,
       statistics: true,
-      estimatedStableLevel: true
+      estimatedStableLevel: true,
+      statisticsSubPages: {
+        rankBySeat: true,
+        dataByRank: true,
+        fanStats: true,
+      },
     },
     table: {
-      showGameMode: true
+      showGameMode: true,
     },
     availableModes: [GameMode.王座, GameMode.玉],
     dateMin: dayjs("2019-08-23", "YYYY-MM-DD"),
@@ -21,19 +26,24 @@ export const CONFIGURATIONS = {
     canonicalDomain: "paipu.momobako.com",
     showTopNotice: true,
     mirrorUrl: "https://paipu.momobako.com/",
-    siteSpecificNotice: "记录包含雀魂国服四人半庄段位战玉之间及王座之间的牌谱。",
+    siteSpecificNotice: "记录包含雀魂四人半庄段位战玉之间及王座之间的牌谱。",
     rootClassName: "koromo",
-    rankColors: ["#28a745", "#17a2b8", "#6c757d", "#dc3545"]
+    rankColors: ["#28a745", "#17a2b8", "#6c757d", "#dc3545"],
   },
   ako: {
     apiSuffix: "api/2_9/",
     features: {
       ranking: false,
-      statistics: false,
-      estimatedStableLevel: false
+      statistics: true,
+      estimatedStableLevel: false,
+      statisticsSubPages: {
+        rankBySeat: true,
+        dataByRank: false,
+        fanStats: true,
+      },
     },
     table: {
-      showGameMode: false
+      showGameMode: false,
     },
     availableModes: [GameMode.金],
     dateMin: dayjs("2019-11-29", "YYYY-MM-DD"),
@@ -47,32 +57,42 @@ export const CONFIGURATIONS = {
     apiSuffix: "api/12/",
     features: {
       ranking: false,
-      statistics: false,
-      estimatedStableLevel: true
+      statistics: true,
+      estimatedStableLevel: true,
+      statisticsSubPages: {
+        rankBySeat: true,
+        dataByRank: false,
+        fanStats: true,
+      },
     },
     availableModes: [GameMode.三王座, GameMode.三玉, GameMode.三金],
     dateMin: dayjs("2019-11-29", "YYYY-MM-DD"),
     siteTitle: "雀魂牌谱屋·三麻",
     canonicalDomain: "paipu-3.momobako.com",
     mirrorUrl: "https://paipu-3.momobako.com/",
-    siteSpecificNotice: "记录包含雀魂国服三人半庄段位战金之间、玉之间及王座之间的牌谱。",
+    siteSpecificNotice: "记录包含雀魂三人半庄段位战金之间、玉之间及王座之间的牌谱。",
     rankColors: ["#28a745", "#6c757d", "#dc3545"],
-    rootClassName: "yuuki"
+    rootClassName: "yuuki",
   },
   contest: {
     apiSuffix: (s: string) => `api/contest/${s}/`,
     features: {
       ranking: false,
-      statistics: false,
-      estimatedStableLevel: false
+      statistics: true,
+      estimatedStableLevel: false,
+      statisticsSubPages: {
+        rankBySeat: true,
+        dataByRank: false,
+        fanStats: true,
+      },
     },
     table: {
-      showGameMode: true
+      showGameMode: true,
     },
     availableModes: [],
     canonicalDomain: domain,
-    showTopNotice: false
-  }
+    showTopNotice: false,
+  },
 };
 
 type Configuration = typeof CONFIGURATIONS.DEFAULT;

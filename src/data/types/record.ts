@@ -5,6 +5,7 @@ import { RANK_LABELS } from "./constants";
 import Conf from "../../utils/conf";
 
 import i18n from "../../i18n";
+import { FanStatEntryList } from "./metadata";
 
 export interface PlayerRecord {
   accountId: number;
@@ -13,12 +14,21 @@ export interface PlayerRecord {
   score: number;
 }
 export interface GameRecord {
+  _id?: string;
   modeId: GameMode;
   uuid: string;
   startTime: number;
   endTime: number;
   players: PlayerRecord[];
 }
+export type HighlightEvent = {
+  type: "役满";
+  fan: FanStatEntryList;
+  player: number;
+};
+export type GameRecordWithEvent = GameRecord & {
+  event: HighlightEvent;
+};
 export const GameRecord = Object.freeze({
   getRankIndexByPlayer(rec: GameRecord, player: number | string | PlayerRecord): number {
     const playerId = (typeof player === "object" ? player.accountId : player).toString();
@@ -47,7 +57,6 @@ export const GameRecord = Object.freeze({
       ? `_a${GameRecord.encodeAccountId(typeof playerId === "number" ? playerId : parseInt(playerId))}`
       : "";
     const uuid = typeof rec === "string" ? rec : rec.uuid;
-    //return `${i18n.t("https://www.majsoul.com/1/")}?paipu=${uuid}${trailer}`;
-    return `${i18n.t("https://mahjongsoul.game.yo-star.com/")}?paipu=${uuid}${trailer}`;
-  }
+    return `${i18n.t("https://game.maj-soul.com/1/")}?paipu=${uuid}${trailer}`;
+  },
 });

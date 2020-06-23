@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/camelcase */
 import dayjs from "dayjs";
 
-import { GameRecord } from "../../types/record";
+import { GameRecord, GameRecordWithEvent } from "../../types/record";
 import { Metadata, PlayerMetadata, PlayerExtendedStats } from "../../types/metadata";
 import { apiGet } from "../api";
 
@@ -13,15 +13,24 @@ export interface DataLoader<T extends Metadata, TRecord = GameRecord> {
 export class RecentHighlightDataLoader implements DataLoader<Metadata> {
   _data: Promise<GameRecord[]>;
   constructor(numItems = 100) {
-    this._data = apiGet<GameRecord[]>(`recent_highlight_games?limit=${numItems}`).then(data =>
-      data.sort((a, b) => a.startTime - b.startTime)
-    );
+    this._data = apiGet<GameRecordWithEvent[]>(`recent_highlight_games?limit=${numItems}`)
+      .then((data) => {
+        if (data.every((x) => x.uuid)) {
+          return data; // Old API
+        }
+        return apiGet<GameRecordWithEvent[]>(`games_by_id/${data.map((x) => x._id).join(",")}`).then((records) => {
+          const recordMap = {} as { [key: string]: GameRecordWithEvent };
+          records.forEach((x) => (recordMap[x._id || ""] = x));
+          return data.map((x) => ({ ...x, ...recordMap[x._id || ""] }));
+        });
+      })
+      .then((data) => data.sort((a, b) => a.startTime - b.startTime));
   }
   async getMetadata(): Promise<Metadata> {
-    return this._data.then(x => ({ count: x.length }));
+    return this._data.then((x) => ({ count: x.length }));
   }
   async getRecords(skip: number, limit: number): Promise<GameRecord[]> {
-    return this._data.then(data => data.slice(skip, skip + limit));
+    return this._data.then((data) => data.slice(skip, skip + limit));
   }
 }
 
@@ -63,9 +72,9 @@ export class PlayerDataLoader implements DataLoader<PlayerMetadata> {
     return `${this._playerId}${this._getDatePath()}?mode=${this._mode}`;
   }
   async getMetadata(): Promise<PlayerMetadata> {
-    return await apiGet<PlayerMetadata>(`player_stats/${this._getParams()}`).then(stats => {
+    return await apiGet<PlayerMetadata>(`player_stats/${this._getParams()}`).then((stats) => {
       stats.extended_stats = apiGet<PlayerExtendedStats>(`player_extended_stats/${this._getParams()}`).then(
-        extendedStats => (stats.extended_stats = extendedStats)
+        (extendedStats) => (stats.extended_stats = extendedStats)
       );
       return stats;
     });
