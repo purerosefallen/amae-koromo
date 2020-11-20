@@ -1,5 +1,5 @@
 FROM node:buster-slim
-RUN apt update && apt -y install python3 cron && rm -rf /var/lib/apt/lists/*
+RUN apt update && apt -y install python cron && rm -rf /var/lib/apt/lists/*
 WORKDIR /usr/src/app
 COPY ./package*.json ./
 RUN npm ci
